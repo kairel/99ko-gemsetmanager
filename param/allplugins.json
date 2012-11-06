@@ -1,13 +1,4 @@
 [
-
-	{ "name":"Page" ,
-	  "url": "https://github.com/99ko-Page", 
-      "description" : "Gestion de pages statiques",
-      "author" : "Jonathan Coulet",
-	  "authorEmail" : "j.coulet@gmail.com",
-	  "authorWebsite" : "http://99ko.tuxfamily.org",
-	  "version" : "1.7"
-	},
 	{
 	  "name" : "Menu",
 	  "description" : "Gère le menu de 99ko.",
@@ -18,12 +9,12 @@
 	  "version" : "0.3-dev0"
 	},
 	{
-	  "name" : "ConfigManager",
-	  "url": "https://github.com/99ko-Page", 
-	  "description" : "Gestion de la configuration de 99ko",
-	  "author" : "Jonathan Coulet",
-	  "authorEmail" : "j.coulet@gmail.com",
-	  "authorWebsite" : "http://99ko.tuxfamily.org",
+	  "name" : "GemsetManager",
+	  "url": "https://github.com/kairel/99ko-gemsetmanager/archive/master.zip", 
+	  "description" : "Gestion avancé des plugins de 99ko",
+	  "author" : "Michael Alves Lobo",
+	  "authorEmail" : "alveslobo.michael@gmail.com",
+	  "authorWebsite" : "http://kairel.fr",
 	  "version" : "1.0"
 	}
 ]
