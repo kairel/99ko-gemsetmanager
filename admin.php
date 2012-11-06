@@ -67,8 +67,9 @@ switch(ACTION){
 		  foreach ($_POST['installed'] as $key => $value){
 		  	if (!is_dir(ROOT.'data/plugin/'.strtolower($key))) {
 		  	  $url = $data['allplugins'][strtolower($key)]['url'];
-		  	  $ziptmp = ROOT.'data/upload/'.$key.'.zip';
-		  	  echo $url;
+		  	  $names = explode("/", $url);
+			  $name = end($names);
+		  	  $ziptmp = ROOT.'data/upload/'.$name;
 		  	  if (file_put_contents($ziptmp,file_get_contents($url))){
 		  	  	$zip = new ZipArchive;
 			    $res = $zip->open($ziptmp);

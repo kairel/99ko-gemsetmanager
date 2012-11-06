@@ -1,11 +1,7 @@
 <?php if(!defined('ROOT')) die(); ?>
 <?php include_once(ROOT.'admin/header.php') ?>
 <?php 
-$allplugins = json_decode(@file_get_contents(ROOT.'/plugin/gemsetmanager/param/allplugins.json'), true);
-foreach($allplugins as $value){
-	$data['allplugins'][strtolower($value['name'])] = $value;
-	$data['allplugins'][strtolower($value['name'])]['id'] = strtolower($value['name']);
-}
+
 foreach($pluginsManager->getPlugins() as $k=>$plugin){
 	if (isset($data['allplugins'][$plugin->getName()])){
 	  unset($data['allplugins'][$plugin->getName()]);

@@ -29,4 +29,11 @@ function rrmdir($dir) {
     rmdir($dir);
 }
 
+$allplugins = json_decode(@file_get_contents(ROOT.'/plugin/gemsetmanager/param/allplugins.json'), true);
+foreach($allplugins as $value){
+	$data['allplugins'][strtolower($value['name'])] = $value;
+	$data['allplugins'][strtolower($value['name'])]['id'] = strtolower($value['name']);
+}
+
+
 ?>
