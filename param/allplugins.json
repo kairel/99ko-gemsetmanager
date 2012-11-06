@@ -1,0 +1,30 @@
+[
+
+	{ "name":"Page" ,
+	  "url": "https://github.com/99ko-Page", 
+      "description" : "Gestion de pages statiques",
+      "author" : "Jonathan Coulet",
+	  "authorEmail" : "j.coulet@gmail.com",
+	  "authorWebsite" : "http://99ko.tuxfamily.org",
+	  "version" : "1.7"
+	},
+	{
+	  "name" : "Menu",
+	  "description" : "Gère le menu de 99ko.",
+	  "url": "http://www.maxgun.fr/public/menu_0.2.1.zip", 
+	  "author" : "Florent Fortat",
+	  "authorEmail" : "florent.fortat@maxgun.fr",
+	  "authorWebsite" : "http://www.maxgun.fr/",
+	  "version" : "0.3-dev0"
+	},
+	{
+	  "name" : "ConfigManager",
+	  "url": "https://github.com/99ko-Page", 
+	  "description" : "Gestion de la configuration de 99ko",
+	  "author" : "Jonathan Coulet",
+	  "authorEmail" : "j.coulet@gmail.com",
+	  "authorWebsite" : "http://99ko.tuxfamily.org",
+	  "version" : "1.0"
+	}
+]
+
