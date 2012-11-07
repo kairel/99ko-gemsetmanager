@@ -16,6 +16,24 @@
 	  "authorEmail" : "alveslobo.michael@gmail.com",
 	  "authorWebsite" : "http://kairel.fr",
 	  "version" : "1.0"
+	},
+	{
+	  "name" : "FCKeditor",
+	  "url" : "http://99ko.tuxfamily.org/download/plugins/fckeditor_1.2.zip",
+	  "description" : "Editeur WYSIWYG HTML",
+	  "author" : "Jonathan Coulet",
+	  "authorEmail" : "j.coulet@gmail.com",
+	  "authorWebsite" : "http://99ko.tuxfamily.org",
+	  "version" : "1.2"
+	},
+	{
+      "name" : "SEOOptimizer",
+      "url" : "http://99ko.tuxfamily.org/download/plugins/seooptimizer_1.0.zip" ,
+      "description" : "Options pour l'optimisation du référencement naturel",
+      "author" : "Jonathan Coulet",
+      "authorEmail" : "j.coulet@gmail.com",
+      "authorWebsite" : "http://99ko.tuxfamily.org",
+      "version" : "1.0"
 	}
 ]
 
