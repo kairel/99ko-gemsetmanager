@@ -70,7 +70,7 @@ switch(ACTION){
 		  	  $names = explode("/", $url);
 			  $name = end($names);
 		  	  $ziptmp = ROOT.'data/upload/'.$name;
-		  	  if (file_put_contents($ziptmp,file_get_contents($url))){
+		  	  if ($gemsetmanager->download($ziptmp,$url)){
 		  	  	$zip = new ZipArchive;
 			    $res = $zip->open($ziptmp);
 	     		if ($res === TRUE) {
