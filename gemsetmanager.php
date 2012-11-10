@@ -29,13 +29,22 @@ function rrmdir($dir) {
     rmdir($dir);
 }
 
-$allplugins = json_decode(@file_get_contents(ROOT.'/plugin/gemsetmanager/param/allplugins.json'), true);
-foreach($allplugins as $value){
-	$data['allplugins'][strtolower($value['name'])] = $value;
-	$data['allplugins'][strtolower($value['name'])]['id'] = strtolower($value['name']);
+$gemsetmanager = new gemsetmanager();
+
+if (ini_get('allow_url_fopen') == '1'){
+	$allplugins = json_decode(@file_get_contents('https://raw.github.com/kairel/99ko-gemsetmanager/master/param/allplugins.json'), true);
+}else {
+	$ch = curl_init('https://raw.github.com/kairel/99ko-gemsetmanager/master/param/allplugins.json');
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+ 	$data = curl_exec($ch);
+ 	curl_close($ch);
+ 	$allplugins = json_decode($data);
 }
 
-$gemsetmanager = new gemsetmanager();
+foreach($allplugins as $value){
+		$data['allplugins'][strtolower($value['name'])] = $value;
+		$data['allplugins'][strtolower($value['name'])]['id'] = strtolower($value['name']);
+}
 
 class gemsetmanager {
 
